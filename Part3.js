@@ -80,9 +80,9 @@
 
 // 7. Create an array ["HTML", "CSS", "JavaScript"]. Use reverse() to reverse the order. Show it in an alert.
 
-// let techArray= ["HTML", "CSS", "JavaScript"]
-// let revArray = techArray.reverse()
-// alert(revArray);
+let techArray= ["HTML", "CSS", "JavaScript"]
+let revArray = techArray.reverse()
+alert(revArray);
 
 
 
