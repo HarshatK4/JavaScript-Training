@@ -88,9 +88,9 @@
 
 // 8. Create an array of numbers [2, 4, 6, 8, 10]. Use every() to check if all numbers are even.
 
-// let nArray= [2, 4, 6, 8, 10]
-// let evenArray= nArray.every(n => (n%2 == 0))
-// console.log(evenArray)
+let nArray= [2, 4, 6, 8, 10]
+let evenArray= nArray.every(n => (n%2 == 0))
+console.log(evenArray)
 
 
 // 9. Create an array of ages [12, 18, 20, 25]. Use some() to check if there’s at least one person under 18.
