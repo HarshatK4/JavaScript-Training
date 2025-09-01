@@ -76,11 +76,11 @@
 //     * Use concat() to add another array [400, 500].
 //     * Show the new array in the console.
 
-// let numArray = [100, 200, 300]
-// let concArray = [400, 500]
-
-// let combArray= numArray.concat(concArray);
-// console.log(combArray)
+let numArray = [100, 200, 300]
+let concArray = [400, 500]
+console.log(combArray)
+let combArray= numArray.concat(concArray);
+console.log(combArray)
 
 
 //------------------------------------------------------------------
