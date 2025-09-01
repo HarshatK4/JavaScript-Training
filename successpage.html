@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <h2 style="color: darkgreen; margin: 20px; text-align: center;">Successfully Registered</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">First Name: </div>
+            <div class="col-6"><span id="Fname"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-6">Last Name: </div>
+            <div class="col-6"><span id="Lname"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-6">Email: </div>
+            <div class="col-6"><span id="email"></span></div>
+        </div>
+        <div class="row">
+            <div class="col-6"> 
+            <a href="nextpage.html" style="color:rgb(227, 76, 16);">Go to next page</a>
+        </div>
+        </div>
+    </div>
+</body>
+<script lang="javascript">
+    let queryString = window.location.search;
+    console.log(queryString);
+
+    let queryParams = new URLSearchParams(queryString);
+
+    let Fname = queryParams.get('Fname');
+    let Lname = queryParams.get('Lname');
+    let emailID = queryParams.get('email');
+    let mobileNumber = queryParams.get('mnum')
+    console.log(Fname, Lname, emailID, mobileNumber);
+
+    document.getElementById('Fname').innerHTML = Fname;
+    document.getElementById('Lname').innerHTML = Lname;
+    document.getElementById('email').innerHTML = emailID;
+    document.getElementById('mnum').innerHTML = mobileNumber;
+
+    //localStorage
+    localStorage.setItem('Fname', Fname)
+    localStorage.setItem('Lname', Lname)
+    localStorage.setItem('email', emailID)
+    localStorage.setItem('mnum', mobileNumber)
+
+    //sessionStorage
+    sessionStorage.setItem('Fname', Fname)
+    sessionStorage.setItem('Lname', Lname)
+    sessionStorage.setItem('email', emailID)
+    sessionStorage.setItem('mnum', mobileNumber)
+</script>
+</html>

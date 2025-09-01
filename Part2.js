@@ -7,9 +7,12 @@
 // else{
 //     console.log("Entered value is odd number")
 // }
-//------------------------------
 
 
+
+
+
+//------------------------------------------------------------------
 // 2. Write a script that asks the user for their marks (out of 100).
 //     * If marks ≥ 90 → Show "Grade A"
 //     * If marks ≥ 75 → Show "Grade B"
@@ -32,6 +35,10 @@
 //         console.log("Fail")           
 // }
 
+
+
+
+//------------------------------------------------------------------
 //3. Use prompt() to ask the user for a day number (1–7). Use a switch statement to print the day name (e.g., 1 → Monday).
 
 // let day= Number(prompt("Enter day number (1–7)"))
@@ -62,6 +69,10 @@
 // }
 
 
+
+
+
+//------------------------------------------------------------------
 // 4. Use a ternary operator to ask the user for their age.
 //     * If age ≥ 18 → "You are an adult"
 //     * Else → "You are a minor"
@@ -70,6 +81,10 @@
 
 // (a>=18) ? console.log("You are an adult") : console.log("You are an minor")
 
+
+
+
+//------------------------------------------------------------------
 // 5. Ask the user to enter a password.
 //     * If the password matches "12345", show "Login Successful".
 //     * Otherwise show "Wrong Password".
@@ -80,6 +95,10 @@
 // }
 // else{console.log("Wrong Password")}
 
+
+
+
+//------------------------------------------------------------------
 // 6. Ask the user for a number.
 //     * If the number is positive
 //         * Check if it’s also even or odd.
@@ -104,6 +123,10 @@
 //     console.log("Number is Zero")
 // }
 
+
+
+
+//------------------------------------------------------------------
 // 7. Ask the user for their age and whether they have a driving license (yes/no).
 // * If age ≥ 18
 //     * If license is "yes" → Show "You can drive"
@@ -125,6 +148,7 @@
 
 
 
+//------------------------------------------------------------------
 // 8. Ask the user to enter username and password.
 //     * If username = "admin"
 //         * If password = "1234" → Show "Welcome Admin"

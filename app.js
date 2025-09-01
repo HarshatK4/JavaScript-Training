@@ -214,7 +214,156 @@
 //     console.log("Value: ", names[i] + ", key: " + i)
 // }
 
-let person = { name:'Kartik', age: 30, city:'Pune'}
-for (let i of Object.keys(person)){
-    console.log("Value: ", person[i] + " key: " + i)
+// let person = { name:'Kartik', age: 30, city:'Pune'}
+// for (let i of Object.keys(person)){
+//     console.log("Value: ", person[i] + " key: " + i)
+// }
+
+
+// functions-------------------------
+
+// function add (a,b){
+//     let c = a+b;
+//     return c;
+// }
+
+// let c= add(10,100);
+// console.log("Function add: ", c);
+
+
+// Arrow function--------------------
+
+// let adding = (a,b) => a+b;
+
+// let d= add(10,100);
+// console.log("Arrow Function add: ", d);
+
+
+//Events in Javascript-------------------------
+
+function show(){
+    console.log("OnFocus Clicked!")
+}
+
+function customblur(){
+    console.log("Blur event!")
+}
+
+// function validate(){
+//     console.log("Validation function!")
+//     let fname = document.getElementById('Fname')
+//     let emailId = document.getElementById('email')
+//     let phoneNumber = document.getElementById('mnum')
+
+//     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+//     const phoneRegex = /^[0-9]{10}$/; 
+
+//     let fnameError = document.getElementById('fnameerror')
+//     let emailError = document.getElementById('emailerror')
+//     let phoneError = document.getElementById('phoneNumbererror')
+
+//     let isValid = true;
+
+//     console.log(fname.value, emailId.value, phoneNumber.value);
+
+//     //First name
+//     if (fname.value === ''){
+//         fnameError.textContent= 'First name is required'
+//         isValid = false; 
+//     } else if (fname.value.length < 3) {
+//         fnameError.textContent = 'Name character length should be greater than 3 ';
+//         isValid = false;
+//     } else{
+//         fnameError.textContent = ''
+//     }
+
+//     // Email ID
+//     if (emailId.value ===''){
+//         emailError.textContent='Email is required'
+//         isValid = false;
+//     } else if (!emailRegex.test(emailId.value)){
+//         emailError.textContent= 'Please enter valid email id'
+//         isValid = false;
+//     } else {
+//         emailError.textContent = ''
+//     }
+
+//     // Mobile number
+//     if(phoneNumber.value === ''){
+//         phoneError.textContent = 'Mobile number is required'
+//         isValid = false;
+//     } else if(!phoneRegex.test(phoneNumber.value)){
+//         phoneError.textContent = 'Please enter a valid mobile number'
+//         isValid = false;
+//     } else {
+//         phoneError.textContent = ''
+//     }
+
+//     return isValid;
+// }
+
+
+function fnameValidate(){
+    let fname = document.getElementById('Fname')
+    let fnameError = document.getElementById('fnameerror')
+    if (fname.value === ''){
+        fnameError.textContent= 'First name is required'
+        return false; 
+    } else if (fname.value.length < 3) {
+        fnameError.textContent = 'Name character length should be greater than 3 ';
+        return false;
+    } else{
+        fnameError.textContent = ''
+    }
+}
+
+function emailIdValidate (){
+    let emailId = document.getElementById('email')
+    let emailError = document.getElementById('emailerror')
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (emailId.value ===''){
+        emailError.textContent='Email is required'
+        return false;
+    } else if (!emailRegex.test(emailId.value)){
+        emailError.textContent= 'Please enter valid email id'
+        return false;
+    } else {
+        emailError.textContent = ''
+    }
+
+}
+
+function mobileNumberValidate(){
+    let phoneNumber = document.getElementById('mnum')
+    let phoneError = document.getElementById('phoneNumbererror')
+    const phoneRegex = /^[0-9]{10}$/;
+
+    if(phoneNumber.value === ''){
+        phoneError.textContent = 'Mobile number is required'
+        return false;
+    } else if(!phoneRegex.test(phoneNumber.value)){
+        phoneError.textContent = 'Please enter a valid mobile number'
+        return false;
+    } else {
+        phoneError.textContent = ''
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+document.getElementById('Fname').addEventListener('input', fnameValidate);
+document.getElementById('email').addEventListener('input', emailIdValidate);
+document.getElementById('mnum').addEventListener('input', mobileNumberValidate);
+
+});
+
+function validate (){
+    fnameValidate();
+    emailIdValidate();
+    mobileNumberValidate();
+
+    return (
+        document.getElementById('fnameerror').textContent ==='' &&
+        document.getElementById('emailerror').textContent ==='' &&
+        document.getElementById('phoneNumbererror').textContent ==='' 
+    );
 }

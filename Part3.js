@@ -9,7 +9,7 @@
 // console.log(items);
 
 
-
+//------------------------------------------------------------------
 // 2. Finding the maximum
 //     * Given [10, 45, 67, 23, 89, 12], find the largest number using Math.max.apply(null, array).
 
@@ -19,6 +19,7 @@
 
 
 
+//------------------------------------------------------------------
 // 3. String to Array & Back
 //     * Take a string "apple,banana,orange".
 //     * Convert it into an array using split().
@@ -32,6 +33,7 @@
 // console.log(str)
 
 
+//------------------------------------------------------------------
 // 3. Create an array of 5 colors. Show the 3rd color using its index.
 
 // let colorsArray = ['red', 'orange', 'black', 'purple', 'white','grey']
@@ -43,6 +45,7 @@
 
 
 
+//------------------------------------------------------------------
 //4. Make an array of numbers [10, 20, 30, 40, 50]. Find the position of 30 using
 
 // let arr= [10, 20, 30, 40, 50];
@@ -50,6 +53,7 @@
 
 
 
+//------------------------------------------------------------------
 // 5. Create an array of names ["Amit", "Rahul", "Sneha", "Priya"].
 //     * Add one more name at the end using push().
 //     * Remove the first name using shift().
@@ -67,6 +71,7 @@
 // console.log("Shift", nameArray)
 
 
+//------------------------------------------------------------------
 // 6. Make an array of numbers [100, 200, 300].
 //     * Use concat() to add another array [400, 500].
 //     * Show the new array in the console.
@@ -78,6 +83,7 @@
 // console.log(combArray)
 
 
+//------------------------------------------------------------------
 // 7. Create an array ["HTML", "CSS", "JavaScript"]. Use reverse() to reverse the order. Show it in an alert.
 
 let techArray= ["HTML", "CSS", "JavaScript"]
@@ -86,6 +92,7 @@ alert(revArray);
 
 
 
+//------------------------------------------------------------------
 // 8. Create an array of numbers [2, 4, 6, 8, 10]. Use every() to check if all numbers are even.
 
 let nArray= [2, 4, 6, 8, 10]
@@ -93,6 +100,7 @@ let evenArray= nArray.every(n => (n%2 == 0))
 console.log(evenArray)
 
 
+//------------------------------------------------------------------
 // 9. Create an array of ages [12, 18, 20, 25]. Use some() to check if there’s at least one person under 18.
 
 let ageArray= [12, 18, 20, 25]
