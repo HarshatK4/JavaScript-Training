@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Projects</title>
+    <script src="begninnerProjects.js"></script>
+  </head>
+  <body onload="realTimeClock()">
+    <div style="padding: 10px; background-color: azure; width: fit-content;">
+        <h1>Digital Clock</h1>
+        <h4 >Showing real-time hours, minutes, seconds</h4>
+        <div id="realTimeClock" style="padding-bottom: 10px;"></div>
+    </div>
+    <div style="border: 2px; background-color: rgb(248, 246, 244); width: fit-content; padding: 20px;">
+      <h1 style="color:rgb(3, 42, 73);">Simple Calculator</h1>
+      <div>
+        <input type="text" id="expression" placeholder="Enter expression" />
+        <button onclick="calculate()">=</button>
+        <button onclick="clearAll()">C</button>
+      </div>
+      <div id="result" style="color: darkgreen; padding: 10px; font-weight: bold;"></div>
+    </div>
+    
+  </body>
+</html>
